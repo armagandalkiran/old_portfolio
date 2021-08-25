@@ -1,37 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.animated-header{
-    position:relative;
-    color:#FDF7EE;
-    -webkit-text-stroke: 0.1vw #FF5C00;  
-    text-transform:uppercase;
+.animated-header {
+  position: relative;
+  color: #fdf7ee;
+  -webkit-text-stroke: 0.1vw #ff5c00;
+  text-transform: uppercase;
+}
+.animated-header::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #ff5c00;
+  -webkit-text-stroke: 0vw #ff5c00;
+  border-right: 2px solid #ff5c00;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
   }
-  .animated-header::before
-  {
-    content: attr(data-text);
-    position:absolute;
-    top:0;
-    left:0;
-    width:0;
-    height:100%;
-    color:#FF5C00;
-    -webkit-text-stroke:0vw #FF5C00;
-    border-right:2px solid #FF5C00;
-    overflow:hidden;
-    animation:animate 6s linear infinite;
+  70%,
+  90% {
+    width: 100%;
   }
-  @keyframes animate
-  {
-      0%,10%,100%
-      {
-          width: 0;
-      }
-      70%,90%
-      {
-          width:100%;
-      }
-  }
+}
