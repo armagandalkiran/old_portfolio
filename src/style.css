@@ -4,3 +4,34 @@
 @tailwind components;
 @tailwind utilities;
 
+.animated-header{
+    position:relative;
+    color:#FDF7EE;
+    -webkit-text-stroke: 0.1vw #FF5C00;  
+    text-transform:uppercase;
+  }
+  .animated-header::before
+  {
+    content: attr(data-text);
+    position:absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:100%;
+    color:#FF5C00;
+    -webkit-text-stroke:0vw #FF5C00;
+    border-right:2px solid #FF5C00;
+    overflow:hidden;
+    animation:animate 6s linear infinite;
+  }
+  @keyframes animate
+  {
+      0%,10%,100%
+      {
+          width: 0;
+      }
+      70%,90%
+      {
+          width:100%;
+      }
+  }

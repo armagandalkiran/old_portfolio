@@ -33138,20 +33138,53 @@ video {
   content: none;
 }
 
-.react-codemirror2 .CodeMirror__container .window-theme__none{
-  box-shadow:none;
+.animated-header{
+  position:relative;
+  color:#FDF7EE;
+  -webkit-text-stroke: 0.1vw #FF5C00;
+  text-transform:uppercase;
 }
 
-.react-codemirror2.CodeMirror__container.window-theme__none{
-  box-shadow:none;
+.animated-header::before
+  {
+  content: attr(data-text);
+  position:absolute;
+  top:0;
+  left:0;
+  width:0;
+  height:100%;
+  color:#FF5C00;
+  -webkit-text-stroke:0vw #FF5C00;
+  border-right:2px solid #FF5C00;
+  overflow:hidden;
+  -webkit-animation:animate 6s linear infinite;
+          animation:animate 6s linear infinite;
 }
 
-.container.jsx-1903165419 .CodeMirror__container{
-  box-shadow:none;
+@-webkit-keyframes animate
+  {
+  0%,10%,100%
+      {
+    width: 0;
+  }
+
+  70%,90%
+      {
+    width:100%;
+  }
 }
 
-.jsx-1903165419 .container{
-  padding:0;
+@keyframes animate
+  {
+  0%,10%,100%
+      {
+    width: 0;
+  }
+
+  70%,90%
+      {
+    width:100%;
+  }
 }
 
 @media (min-width: 640px){
