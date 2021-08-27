@@ -9,6 +9,11 @@ module.exports = {
         tirtiary: "#CFDAFF",
         footerColor: "#CEB692",
         backgroundColor:"#FDF7EE",
+        mainPartTextColor:"#696969",
+        selectedCard:"#FFD79B",
+        yellowCard:"#FFCC80",
+        purpleCard:"#A8BCFF",
+        pinkCard:"#D2ACAC",
       },
       fontFamily:{
         body:["Montserrat"],
@@ -16,7 +21,7 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {width: ["responsive", "hover", "focus"],},
   },
   plugins: [],
 }
