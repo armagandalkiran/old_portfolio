@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="dist/style.css" />
+    <link rel="shortcut icon" href="favicon.ico">
     <title>Armağan Dalkıran | Personal Website</title>
   </head>
   <body class="bg-backgroundColor font-body">
     <header class="pt-8 px-10 md:px-36 lg:px-44 md:pt-8">
       <nav class="flex align-center flex-col lg:flex-row md:justify-between">
-        <div class="flex items-center justify-center">
-          <img class="w-16" src="./dist/svgs/logo.svg" />
-          <h1 class="md:ml-8 font-bold hidden md:text-xl md:inline">
-            Armağan Dalkıran
-          </h1>
-        </div>
+        <a href="/">
+          <div class="flex items-center justify-center">
+            <img class="w-16" src="./dist/svgs/logo.svg" />
+            <h1 class="md:ml-8 font-bold hidden md:text-xl md:inline">
+              Armağan Dalkıran
+            </h1>
+          </div>
+        </a>
         <ul
           class="
             flex
@@ -48,7 +51,7 @@
       <div class="grid gap-4 lg:grid-cols-2 items-center md:mt-20 mt-10">
         <div class="flex items-center lg:items-start flex-col">
           <h2 class="text-3xl md:text-4xl xl:text-6xl 2xl:text-8xl font-bold">
-            Hi there, I'm
+            Hey there, I'm
           </h2>
           <h1
             data-text="Armagan"
@@ -65,9 +68,10 @@
             Armagan
           </h1>
           <p class="text-xl mt-4 md:text-xl lg:text-2xl md:mt-4 md:pr-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            molestie arcu id nulla porta, vitae eleifend magna sodales.
-            Vestibulum ut leo viverra, elementum urna ac, venenatis ante.
+            I am a senior computer engineering student who likes to improve
+            himself and has 1 year of experience in front-end, back-end and
+            database systems ...
+            <a href="about" class="hover:underline text-blue-700">readmore</a>
           </p>
         </div>
         <div class="mt-10">
@@ -121,8 +125,9 @@
                   lg:text-left lg:text-lg
                 "
               >
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
+                I've been working every day to be better in frontend
+                development, which I discovered that I was interested in since
+                2020.
               </p>
             </div>
           </div>
@@ -147,8 +152,10 @@
                   lg:text-left lg:text-lg
                 "
               >
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
+                As someone who likes to travel and discover new things, I joined
+                the work and travel program in 2019 and worked as a waiter in
+                the USA. This experience changed my perspective on life and
+                improved my English level significantly.
               </p>
             </div>
           </div>
@@ -173,8 +180,8 @@
                   lg:text-left lg:text-lg
                 "
               >
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
+                I am a senior computer engineering student at Baskent
+                University.
               </p>
             </div>
           </div>
@@ -186,10 +193,10 @@
               font-extrabold
               text-xl
               hidden
-              xl:block xl:text-8xl xl:pl-36
+              xl:block xl:text-8xl xl:pl-36 xl:leading-tight
             "
           >
-            “Lorem Ipsum is simply dummy text of the printing.”
+            “My biggest dream is to make my all dreams come true”
           </p>
           <img class="w-96 hidden xl:block" src="dist/svgs/line.svg" />
         </div>
@@ -214,8 +221,12 @@
                 src="dist/svgs/yellow_arrow.svg"
               />
               <p class="text-mainPartTextColor py-4 text-sm lg:text-xl">
-                Various versions have evolved over the years, sometimes by
-                accident, sometimes on purpose (injected humour and the like).
+                Baskent Connect is a chat application where group conversations
+                and announcements can be made for lecturers and students to
+                communicate more easily and it is all-in-one application which
+                students can achieve any information they need about their
+                lectures. This application also cares about privacy so there is
+                no need to share personal information.
               </p>
             </div>
             <div
@@ -235,15 +246,30 @@
               </a>
             </div>
           </div>
-          <div class="bg-white rounded-lg font-bold">
+          <div class="bg-white rounded-lg font-bold relative">
             <div class="p-12">
               <img
                 class="w-4 mb-4 lg:w-9 xl:w-12"
                 src="dist/svgs/purple_arrow.svg"
               />
-              <p class="text-mainPartTextColor py-4 text-sm lg:text-xl">
-                Various versions have evolved over the years, sometimes by
-                accident, sometimes on purpose (injected humour and the like).
+              <p
+                class="
+                  text-mainPartTextColor
+                  mb-8
+                  py-4
+                  text-sm
+                  lg:text-xl lg:mb-0
+                "
+              >
+                Elite Parke, our first freelance showroom web application site
+                that we made under the name of yorusoft organization with my
+                teammate.<br /><br />
+                You can view the site at the link below:<br /><br />
+                <a
+                  class="font-extrabold hover:underline"
+                  href="https://eliteparke.com/"
+                  >https://eliteparke.com/</a
+                >
               </p>
             </div>
             <div
@@ -255,6 +281,9 @@
                 py-4
                 items-center
                 justify-between
+                absolute
+                bottom-0
+                w-full
               "
             >
               <h4 class="text-white lg:text-xl xl:text-2xl">Elite Parke</h4>
@@ -270,8 +299,9 @@
                 src="dist/svgs/pink_arrow.svg"
               />
               <p class="text-mainPartTextColor py-4 text-sm lg:text-xl">
-                Various versions have evolved over the years, sometimes by
-                accident, sometimes on purpose (injected humour and the like).
+                Dietry is a full-stack web application project that I did during
+                my internship at Kalemzen Yazılım company, which has features
+                such as arranging menus and tracking weight for guesthouses.
               </p>
             </div>
             <div
