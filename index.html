@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -26,7 +26,10 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://www.armagandalkiran.com/" />
-    <meta property="twitter:title" content="Armağan Dalkıran | Personal Website" />
+    <meta
+      property="twitter:title"
+      content="Armağan Dalkıran | Personal Website"
+    />
     <meta
       property="twitter:description"
       content="I am Armağan Dalkıran - A senior computer engineering student who likes to improve himself and has 1 year of experience in front-end, back-end and database systems."
@@ -39,13 +42,21 @@
     <link rel="stylesheet" href="dist/style.css" />
     <link rel="icon" type="image/x-icon" href="dist/images/favicon.ico" />
   </head>
-  <body class="bg-backgroundColor font-body">
+  <body class="bg-backgroundColor font-body dark:bg-darkBackgroundColor">
     <header class="pt-8 px-10 md:px-36 lg:px-44 md:pt-8">
       <nav class="flex align-center flex-col lg:flex-row md:justify-between">
         <a href="/">
           <div class="flex items-center justify-center">
             <img class="w-16" src="./dist/svgs/logo.svg" alt="logo" />
-            <h1 class="md:ml-8 font-bold hidden md:text-xl md:inline">
+            <h1
+              class="
+                md:ml-8
+                font-bold
+                hidden
+                md:text-xl md:inline
+                dark:text-darkTextColor
+              "
+            >
               Armağan Dalkıran
             </h1>
           </div>
@@ -59,6 +70,11 @@
             lg:justify-between lg:mt-0
           "
         >
+          <button onclick="darkMode()" class="dark:bg-darkTextColor bg-black hover:bg-gray-800 dark:hover:bg-gray-100 flex items-center justify-center
+           rounded-lg w-12 h-12 mx-4 font-bold md:text-xl">
+            <img class="hidden dark:inline" src="dist/svgs/sun.svg">
+            <img class="inline dark:hidden" src="dist/svgs/moon.svg">
+          </button>
           <a href="about">
             <li
               class="
@@ -67,6 +83,8 @@
                 md:text-xl
                 hover:text-primary
                 cursor-pointer
+                dark:text-darkTextColor
+                dark:hover:text-primary
               "
             >
               About
@@ -83,6 +101,8 @@
                 md:text-xl
                 hover:text-primary
                 cursor-pointer
+                dark:text-darkTextColor
+                dark:hover:text-primary
               "
             >
               Resume
@@ -92,14 +112,24 @@
       </nav>
       <div class="grid gap-4 lg:grid-cols-2 items-center md:mt-20 mt-10">
         <div class="flex items-center lg:items-start flex-col">
-          <h2 class="text-3xl md:text-4xl xl:text-6xl 2xl:text-8xl font-bold">
+          <h2
+            class="
+              text-3xl
+              md:text-4xl
+              xl:text-6xl
+              2xl:text-8xl
+              font-bold
+              dark:text-darkTextColor
+            "
+          >
             Hey there, I'm
           </h2>
           <h1
-            data-text="Armağan"
+            data-text="Armagan"
             class="
               max-w-max
               font-bold
+              dark:text-darkBackgroundColor
               animated-header
               text-3xl
               md:text-4xl
@@ -107,9 +137,18 @@
               2xl:text-8xl
             "
           >
-            Armağan
+            Armagan
           </h1>
-          <p class="text-xl mt-4 md:text-xl lg:text-2xl md:mt-4 md:pr-8">
+          <p
+            class="
+              text-xl
+              mt-4
+              md:text-xl
+              lg:text-2xl
+              md:mt-4 md:pr-8
+              dark:text-darkTextColor
+            "
+          >
             I am a senior computer engineering student who likes to improve
             himself and has 1 year of experience in front-end, back-end and
             database systems ...
@@ -118,19 +157,50 @@
         </div>
         <div class="mt-10">
           <div class="flex items-center lg:justify-center">
-            <img class="" src="dist/svgs/code.svg" alt="code image"/>
+            <img class="" src="dist/svgs/code.svg" alt="code image" />
           </div>
         </div>
       </div>
-      <img
+      <!-- <img
         class="m-auto w-4 mt-8 md:mt-24 md:w-5 lg:m-8 lg:w-8 xl:mt-0"
         src="dist/svgs/down_arrow.svg"
         alt="down arrow"
-      />
+      /> -->
+      <svg
+        class="
+          m-auto
+          w-4
+          mt-8
+          md:mt-24 md:w-5
+          lg:m-8 lg:w-8
+          xl:mt-0
+          stroke-current
+          dark:text-darkTextColor
+        "
+        width="24"
+        height="113"
+        viewBox="0 0 24 113"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10.9393 112.425C11.5251 113.011 12.4749 113.011 13.0607 112.425L22.6066 102.879C23.1924 
+          102.293 23.1924 101.343 22.6066 100.758C22.0208 100.172 21.0711 100.172 20.4853 100.758L12 
+          109.243L3.51472 100.758C2.92893 100.172 1.97919 100.172 1.3934 100.758C0.807611 101.343 0.807611
+           102.293 1.3934 102.879L10.9393 112.425ZM10.5 0L10.5 111.364H13.5L13.5 0L10.5 0Z"
+          stroke-width="3"
+        />
+      </svg>
     </header>
     <main class="pt-8 px-10 md:px-36 lg:px-44 md:pt-8">
       <h3
-        class="text-mainPartTextColor font-bold text-center text-xl md:text-3xl"
+        class="
+          text-mainPartTextColor
+          font-bold
+          text-center text-xl
+          md:text-3xl
+          dark:text-darkTextColor
+        "
       >
         WHO AM I ?
       </h3>
@@ -148,7 +218,11 @@
               lg:flex-row lg:p-8
             "
           >
-            <img class="w-16 lg:w-32" src="dist/svgs/frontend-card.svg" alt="phone"/>
+            <img
+              class="w-16 lg:w-32"
+              src="dist/svgs/frontend-card.svg"
+              alt="phone"
+            />
             <div class="lg:p-8">
               <h4
                 class="
@@ -175,7 +249,11 @@
             </div>
           </div>
           <div class="lg:p-8 p-2 flex items-center flex-col mb-8 lg:flex-row">
-            <img class="w-16 lg:w-32" src="dist/svgs/plane-card.svg" alt="plane"/>
+            <img
+              class="w-16 lg:w-32"
+              src="dist/svgs/plane-card.svg"
+              alt="plane"
+            />
             <div class="lg:p-8">
               <h4
                 class="
@@ -185,6 +263,7 @@
                   font-bold
                   text-center
                   lg:text-left lg:text-2xl
+                  dark:text-darkTextColor
                 "
               >
                 Traveler and Explorer
@@ -193,6 +272,7 @@
                 class="
                   text-sm text-mainPartTextColor text-center
                   lg:text-left lg:text-lg
+                  dark:text-darkTextColor
                 "
               >
                 As someone who likes to travel and discover new things, I joined
@@ -203,7 +283,11 @@
             </div>
           </div>
           <div class="lg:p-8 p-2 flex items-center flex-col mb-8 lg:flex-row">
-            <img class="w-16 lg:w-32" src="dist/svgs/user-card.svg" alt="user" />
+            <img
+              class="w-16 lg:w-32"
+              src="dist/svgs/user-card.svg"
+              alt="user"
+            />
             <div class="lg:p-8">
               <h4
                 class="
@@ -213,6 +297,7 @@
                   font-bold
                   text-center
                   lg:text-left lg:text-2xl
+                  dark:text-darkTextColor
                 "
               >
                 Computer Engineering Student
@@ -221,6 +306,7 @@
                 class="
                   text-sm text-mainPartTextColor text-center
                   lg:text-left lg:text-lg
+                  dark:text-darkTextColor
                 "
               >
                 I am a senior computer engineering student at Baskent
@@ -241,13 +327,47 @@
           >
             “My biggest dream is to make my all dreams come true”
           </p>
-          <img class="w-96 hidden xl:block" src="dist/svgs/line.svg" alt="line"/>
+          <!-- <img class="w-96 hidden xl:block stroke-current text-darkTextColor" src="dist/svgs/line.svg" alt="line"/> -->
+          <svg
+            class="
+              w-96
+              hidden
+              xl:block
+              stroke-current
+              text-black
+              dark:text-darkTextColor
+            "
+            width="455"
+            height="85"
+            viewBox="0 0 455 85"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3 79C104.656 23.8221 346.023 7.34253 454 6"
+              stroke-width="12"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear"
+                x1="228.5"
+                y1="6"
+                x2="228.5"
+                y2="79"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop />
+                <stop offset="1" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+          </svg>
         </div>
       </div>
       <div>
         <h3
           class="
-            text-mainPartTextColor
+            text-mainPartTextColor 
+            dark:text-darkTextColor
             mt-12
             font-bold
             text-center text-xl
@@ -286,7 +406,11 @@
             >
               <h4 class="text-white lg:text-xl xl:text-2xl">Baskent Connect</h4>
               <a href="https://github.com/armagandalkiran/Baskent-Connect">
-                <img class="w-10 xl:w-16" src="dist/svgs/white_github.svg" alt="github"/>
+                <img
+                  class="w-10 xl:w-16"
+                  src="dist/svgs/white_github.svg"
+                  alt="github"
+                />
               </a>
             </div>
           </div>
@@ -333,7 +457,11 @@
             >
               <h4 class="text-white lg:text-xl xl:text-2xl">Elite Parke</h4>
               <a href="https://github.com/armagandalkiran/eliteparke">
-                <img class="w-10 xl:w-16" src="dist/svgs/white_github.svg" alt="wgithub"/>
+                <img
+                  class="w-10 xl:w-16"
+                  src="dist/svgs/white_github.svg"
+                  alt="wgithub"
+                />
               </a>
             </div>
           </div>
@@ -363,7 +491,11 @@
             >
               <h4 class="text-white lg:text-xl xl:text-2xl">Dietry</h4>
               <a href="https://github.com/armagandalkiran/Diet_Web_Application">
-                <img class="w-10 xl:w-16" src="dist/svgs/white_github.svg" alt="warrow"/>
+                <img
+                  class="w-10 xl:w-16"
+                  src="dist/svgs/white_github.svg"
+                  alt="warrow"
+                />
               </a>
             </div>
           </div>
@@ -380,16 +512,35 @@
           href="https://github.com/armagandalkiran"
           target="_blank"
         >
-          <img class="w-10" src="dist/svgs/footer_github.svg" alt="fgithub"/>
+          <img class="w-10" src="dist/svgs/footer_github.svg" alt="fgithub" />
         </a>
         <a
           href="https://www.linkedin.com/in/arma%C4%9Fan-dalk%C4%B1ran-4aa233171/"
           target="_blank"
         >
-          <img class="w-10" src="dist/svgs/footer_linkedin.svg" alt="linkedin"/>
+          <img
+            class="w-10"
+            src="dist/svgs/footer_linkedin.svg"
+            alt="linkedin"
+          />
         </a>
-        <img class="w-10 ml-4" src="dist/svgs/footer_arrow.svg" alt="farrow"/>
+        <img class="w-10 ml-4" src="dist/svgs/footer_arrow.svg" alt="farrow" />
       </div>
     </footer>
+
+    <script>
+        if (localStorage.getItem('dark')) {
+          document.documentElement.classList.add('dark');
+        }
+        function darkMode() {
+          document.documentElement.classList.toggle('dark');
+          if (document.documentElement.classList.contains('dark')) {
+            localStorage.setItem('dark', true);
+          } else {
+            localStorage.removeItem('dark');
+          }
+        }
+    </script>
+
   </body>
 </html>

@@ -6,7 +6,7 @@
 
 .animated-header {
   position: relative;
-  color: #fdf7ee;
+  color: #FDF7EE;
   -webkit-text-stroke: 0.1vw #ff5c00;
   text-transform: uppercase;
 }
@@ -19,7 +19,7 @@
   height: 100%;
   color: #ff5c00;
   -webkit-text-stroke: 0vw #ff5c00;
-  border-right: 2px solid #ff5c00;
+  border-right: 3px solid #ff5c00;
   overflow: hidden;
   animation: animate 6s linear infinite;
 }

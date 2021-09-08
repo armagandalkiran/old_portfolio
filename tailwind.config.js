@@ -1,6 +1,6 @@
 module.exports = {
   purge: [],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
       colors:{
@@ -9,7 +9,9 @@ module.exports = {
         tirtiary: "#CFDAFF",
         footerColor: "#CEB692",
         backgroundColor:"#FDF7EE",
+        darkBackgroundColor:"#363636",
         mainPartTextColor:"#696969",
+        darkTextColor:"#DEDEDE",
         selectedCard:"#FFD79B",
         yellowCard:"#FFCC80",
         purpleCard:"#A8BCFF",
@@ -21,7 +23,7 @@ module.exports = {
     },
   },
   variants: {
-    extend: {width: ["responsive", "hover", "focus"],},
+    extend: {width: ["responsive", "hover", "focus"],display: ['dark']},
   },
   plugins: [],
 }

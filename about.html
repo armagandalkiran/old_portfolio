@@ -39,13 +39,13 @@
     <link rel="stylesheet" href="dist/style.css" />
     <link rel="icon" type="image/x-icon" href="dist/images/favicon.ico" />
   </head>
-  <body class="bg-backgroundColor font-body">
+  <body class="bg-backgroundColor font-body dark:bg-darkBackgroundColor">
     <header class="pt-8 px-10 md:px-36 lg:px-44 md:pt-8">
       <nav class="flex align-center flex-col lg:flex-row md:justify-between">
         <a href="/">
           <div class="flex items-center justify-center">
             <img class="w-16" src="./dist/svgs/logo.svg" alt="logo"/>
-            <h1 class="md:ml-8 font-bold hidden md:text-xl md:inline">
+            <h1 class="md:ml-8 font-bold hidden md:text-xl md:inline dark:text-darkTextColor">
               Armağan Dalkıran
             </h1>
           </div>
@@ -59,14 +59,19 @@
             lg:justify-between lg:mt-0
           "
         >
+        <button onclick="darkMode()" class="dark:bg-darkTextColor bg-black hover:bg-gray-800 dark:hover:bg-gray-100 flex items-center justify-center
+        rounded-lg w-12 h-12 mx-4 font-bold md:text-xl">
+         <img class="hidden dark:inline" src="dist/svgs/sun.svg">
+         <img class="inline dark:hidden" src="dist/svgs/moon.svg">
+       </button>
           <li
-            class="mx-4 font-bold md:text-xl hover:text-primary cursor-pointer"
+            class="mx-4 font-bold md:text-xl hover:text-primary cursor-pointer dark:text-darkTextColor dark:hover:text-primary"
           >
             About
           </li>
           <a href="https://drive.google.com/file/d/1slFmz7C2Grzs8dXuRMIzJALQTvPwYQSL/view?usp=sharing" target="_blank">
             <li
-              class="mx-4 font-bold md:text-xl hover:text-primary cursor-pointer"
+              class="mx-4 font-bold md:text-xl hover:text-primary cursor-pointer dark:text-darkTextColor dark:hover:text-primary"
             >
               Resume
             </li>
@@ -78,8 +83,8 @@
       <div class="flex flex-col items-center mt-8 lg:flex-row lg:p-8 lg:gap-24">
         <img class="w-11/12 mb-10 lg:mr-10" src="dist/svgs/about_memoji.svg" alt="memoji"/>
         <div>
-          <h2 class="font-bold text-xl lg:text-5xl">Hey there, I'm Armagan!</h2>
-          <p class="mt-4">
+          <h2 class="font-bold text-xl lg:text-5xl dark:text-darkTextColor">Hey there, I'm Armagan!</h2>
+          <p class="mt-4 dark:text-darkTextColor">
             I am a senior computer engineering student who likes to improve
             himself and has 1 year of experience in front-end, back-end and
             database systems.
@@ -117,5 +122,20 @@
         <img class="w-10 ml-4" src="dist/svgs/footer_arrow.svg" alt="farrow"/>
       </div>
     </footer>
+
+    <script>
+      if (localStorage.getItem('dark')) {
+        document.documentElement.classList.add('dark');
+      }
+      function darkMode() {
+        document.documentElement.classList.toggle('dark');
+        if (document.documentElement.classList.contains('dark')) {
+          localStorage.setItem('dark', true);
+        } else {
+          localStorage.removeItem('dark');
+        }
+      }
+  </script>
+
   </body>
 </html>
