@@ -12,8 +12,8 @@
       content="I am Armağan Dalkıran - A senior computer engineering student who likes to improve himself and has 1 year of experience in front-end, back-end and database systems."
     />
     <meta
-    name="keywords"
-    content="Armağan,Armağan Dalkıran,Armağan Dalkıran Facebook,Armağan Dalkıran instagram
+      name="keywords"
+      content="Armağan,Armağan Dalkıran,Armağan Dalkıran Facebook,Armağan Dalkıran instagram
     Armağan Dalkıran kimdir,Armağan Dalkıran cv,Armağan Dalkıran üniversite,Armağan Dalkıran kişisel website,
     armağan dalkıran,armağan,Görkem Armağan Dalkıran"
     />
@@ -31,7 +31,10 @@
     /> -->
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://www.armagandalkiran.com/about" />
+    <meta
+      property="twitter:url"
+      content="https://www.armagandalkiran.com/about"
+    />
     <meta property="twitter:title" content="Armağan Dalkıran | About" />
     <meta
       property="twitter:description"
@@ -44,14 +47,36 @@
     <title>Armağan Dalkıran | About</title>
     <link rel="stylesheet" href="dist/style.css" />
     <link rel="icon" type="image/x-icon" href="dist/images/favicon.ico" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-9T08XYLR06"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-9T08XYLR06");
+    </script>
   </head>
   <body class="bg-backgroundColor font-body dark:bg-darkBackgroundColor">
     <header class="pt-8 px-10 md:px-36 lg:px-44 md:pt-8">
       <nav class="flex align-center flex-col lg:flex-row md:justify-between">
         <a href="/">
           <div class="flex items-center justify-center">
-            <img class="w-16" src="./dist/svgs/logo.svg" alt="logo"/>
-            <h1 class="md:ml-8 font-bold hidden md:text-xl md:inline dark:text-darkTextColor">
+            <img class="w-16" src="./dist/svgs/logo.svg" alt="logo" />
+            <h1
+              class="
+                md:ml-8
+                font-bold
+                hidden
+                md:text-xl md:inline
+                dark:text-darkTextColor
+              "
+            >
               Armağan Dalkıran
             </h1>
           </div>
@@ -65,19 +90,52 @@
             lg:justify-between lg:mt-0
           "
         >
-        <button onclick="darkMode()" class="dark:bg-darkTextColor bg-black hover:bg-gray-800 dark:hover:bg-gray-100 flex items-center justify-center
-        rounded-lg w-12 h-12 mx-4 font-bold md:text-xl">
-         <img class="hidden dark:inline" src="dist/svgs/sun.svg">
-         <img class="inline dark:hidden" src="dist/svgs/moon.svg">
-       </button>
+          <button
+            onclick="darkMode()"
+            class="
+              dark:bg-darkTextColor
+              bg-black
+              hover:bg-gray-800
+              dark:hover:bg-gray-100
+              flex
+              items-center
+              justify-center
+              rounded-lg
+              w-12
+              h-12
+              mx-4
+              font-bold
+              md:text-xl
+            "
+          >
+            <img class="hidden dark:inline" src="dist/svgs/sun.svg" />
+            <img class="inline dark:hidden" src="dist/svgs/moon.svg" />
+          </button>
           <li
-            class="mx-4 font-bold md:text-xl hover:text-primary cursor-pointer dark:text-darkTextColor dark:hover:text-primary"
+            class="
+              mx-4
+              font-bold
+              md:text-xl
+              hover:text-primary
+              cursor-pointer
+              dark:text-darkTextColor dark:hover:text-primary
+            "
           >
             About
           </li>
-          <a href="https://drive.google.com/file/d/1slFmz7C2Grzs8dXuRMIzJALQTvPwYQSL/view?usp=sharing" target="_blank">
+          <a
+            href="https://drive.google.com/file/d/1slFmz7C2Grzs8dXuRMIzJALQTvPwYQSL/view?usp=sharing"
+            target="_blank"
+          >
             <li
-              class="mx-4 font-bold md:text-xl hover:text-primary cursor-pointer dark:text-darkTextColor dark:hover:text-primary"
+              class="
+                mx-4
+                font-bold
+                md:text-xl
+                hover:text-primary
+                cursor-pointer
+                dark:text-darkTextColor dark:hover:text-primary
+              "
             >
               Resume
             </li>
@@ -87,9 +145,15 @@
     </header>
     <main class="pt-8 px-10 md:px-36 lg:px-44 md:pt-8">
       <div class="flex flex-col items-center mt-8 lg:flex-row lg:p-8 lg:gap-24">
-        <img class="w-11/12 mb-10 lg:mr-10" src="dist/svgs/about_memoji.svg" alt="memoji"/>
+        <img
+          class="w-11/12 mb-10 lg:mr-10"
+          src="dist/svgs/about_memoji.svg"
+          alt="memoji"
+        />
         <div>
-          <h2 class="font-bold text-xl lg:text-5xl dark:text-darkTextColor">Hey there, I'm Armagan!</h2>
+          <h2 class="font-bold text-xl lg:text-5xl dark:text-darkTextColor">
+            Hey there, I'm Armagan!
+          </h2>
           <p class="mt-4 dark:text-darkTextColor">
             I am a senior computer engineering student who likes to improve
             himself and has 1 year of experience in front-end, back-end and
@@ -116,32 +180,39 @@
         Made by Armağan Dalkıran
       </h5>
       <div class="flex items-center mt-4">
-        <a class="mr-4" href="https://github.com/armagandalkiran" target="_blank" >
-          <img class="w-10" src="dist/svgs/footer_github.svg" alt="fgithub"/>
+        <a
+          class="mr-4"
+          href="https://github.com/armagandalkiran"
+          target="_blank"
+        >
+          <img class="w-10" src="dist/svgs/footer_github.svg" alt="fgithub" />
         </a>
         <a
           href="https://www.linkedin.com/in/arma%C4%9Fan-dalk%C4%B1ran-4aa233171/"
           target="_blank"
         >
-        <img class="w-10" src="dist/svgs/footer_linkedin.svg" alt="linkedin"/>
-      </a>
-        <img class="w-10 ml-4" src="dist/svgs/footer_arrow.svg" alt="farrow"/>
+          <img
+            class="w-10"
+            src="dist/svgs/footer_linkedin.svg"
+            alt="linkedin"
+          />
+        </a>
+        <img class="w-10 ml-4" src="dist/svgs/footer_arrow.svg" alt="farrow" />
       </div>
     </footer>
 
     <script>
-      if (localStorage.getItem('dark')) {
-        document.documentElement.classList.add('dark');
+      if (localStorage.getItem("dark")) {
+        document.documentElement.classList.add("dark");
       }
       function darkMode() {
-        document.documentElement.classList.toggle('dark');
-        if (document.documentElement.classList.contains('dark')) {
-          localStorage.setItem('dark', true);
+        document.documentElement.classList.toggle("dark");
+        if (document.documentElement.classList.contains("dark")) {
+          localStorage.setItem("dark", true);
         } else {
-          localStorage.removeItem('dark');
+          localStorage.removeItem("dark");
         }
       }
-  </script>
-
+    </script>
   </body>
 </html>
